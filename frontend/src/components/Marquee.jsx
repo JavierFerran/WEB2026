@@ -13,7 +13,7 @@ export const Marquee = () => {
                     <div key={half} className="flex items-center gap-10">
                         {row.map((item, i) => (
                             <span key={`${half}-${i}`} className="flex items-center gap-10">
-                                <span className="font-editorial text-2xl italic text-[color:var(--color-muted)] md:text-3xl">
+                                <span className="text-2xl font-semibold italic text-[color:var(--color-muted)] md:text-3xl">
                                     {item}
                                 </span>
                                 <span className="h-1.5 w-1.5 rounded-full bg-[color:var(--color-accent)]" />

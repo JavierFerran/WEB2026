@@ -39,7 +39,7 @@ export const ContactSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: EASE }}
-            className="font-editorial text-4xl leading-tight md:text-5xl"
+            className="font-semibold text-4xl leading-tight md:text-5xl"
         >
             Contact
         </motion.h2>

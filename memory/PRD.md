@@ -11,7 +11,7 @@ Landing page de portfolio estática para un director de arte freelance (Ferrán 
 ## Arquitectura
 - React SPA (CRA + craco), react-router-dom (BrowserRouter), sin llamadas a backend.
 - Datos: /app/frontend/src/data/projects.js (20 proyectos, contadores por categoría calculados con getCategoryCounts).
-- Fuentes: /app/frontend/src/fonts/Dual-W00-500.ttf (peso 500, texto general) y Dual-W00-600.ttf (peso 600, títulos) vía @font-face en index.css. Sustituyen a Akrobat (2026-08-27).
+- Fuentes: /app/frontend/src/fonts/Dual-W00-500.ttf (peso 500, texto general) y Dual-W00-600.ttf (peso 600, títulos) vía @font-face en index.css. Sustituyen a Akrobat (2026-08-27). Academy Engraved eliminada del proyecto (2026-08-27): el título "Work" y todos los titulares van en Dual 600. El logo del header es el PNG en /public/assets/logo.png.
 - Tokens de diseño en :root de index.css (--color-accent: #1d46c8, --color-ink, --color-muted, --font-editorial).
 - Animación: framer-motion (reveal enmascarado del titular, stagger del grid, reveals por scroll), lenis (scroll suave), marquee editorial CSS, parallax en imagen About.
 - public/_redirects (/* /index.html 200) para SPA en Cloudflare Pages.

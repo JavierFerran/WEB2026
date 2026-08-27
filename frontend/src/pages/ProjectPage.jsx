@@ -52,7 +52,7 @@ export default function ProjectPage() {
                         initial={{ y: "115%" }}
                         animate={{ y: 0 }}
                         transition={{ duration: 0.9, ease: EASE, delay: 0.1 }}
-                        className="font-editorial text-4xl leading-tight md:text-6xl"
+                        className="font-semibold text-4xl leading-tight md:text-6xl"
                     >
                         {project.titulo}
                     </motion.h1>
