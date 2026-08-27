@@ -39,7 +39,7 @@ export const Header = () => {
                             type="button"
                             data-testid={`nav-${item.id}`}
                             onClick={() => goTo(item.id)}
-                            className={`text-sm font-bold uppercase tracking-[0.18em] transition-colors duration-300 md:text-base ${
+                            className={`text-sm font-semibold uppercase tracking-[0.18em] transition-colors duration-300 md:text-base ${
                                 i === 0
                                     ? "text-accent underline underline-offset-8 decoration-2"
                                     : "text-[color:var(--color-ink)] hover:text-accent"

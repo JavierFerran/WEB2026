@@ -4,23 +4,16 @@
 
 /* ---------- Fuentes propias ---------- */
 @font-face {
-    font-family: "Akrobat";
-    src: url("./fonts/Akrobat-Regular.woff") format("woff");
-    font-weight: 400;
+    font-family: "Dual";
+    src: url("./fonts/Dual-W00-500.ttf") format("truetype");
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: "Akrobat";
-    src: url("./fonts/Akrobat-Bold.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Akrobat";
-    src: url("./fonts/Akrobat-Black.woff") format("woff");
-    font-weight: 900;
+    font-family: "Dual";
+    src: url("./fonts/Dual-W00-600.ttf") format("truetype");
+    font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
@@ -42,7 +35,7 @@
     --color-ink: #17181c;
     --color-muted: #8a8f98;
     --color-accent: #1d46c8; /* azul de acento reutilizable: logo, titular, links */
-    --font-sans: "Akrobat", "Arial Narrow", Arial, sans-serif;
+    --font-sans: "Dual", "Helvetica Neue", Arial, sans-serif;
     --font-editorial: "Academy Engraved", "Didot", "Bodoni MT", "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
@@ -63,7 +56,7 @@ body {
     background: var(--color-bg);
     color: var(--color-ink);
     font-family: var(--font-sans);
-    font-weight: 400;
+    font-weight: 500;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

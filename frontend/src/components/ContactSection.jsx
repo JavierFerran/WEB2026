@@ -53,7 +53,7 @@ export const ContactSection = () => (
             <a
                 data-testid="contact-email-link"
                 href="mailto:artworks@javierferran.com"
-                className="text-accent text-2xl font-bold tracking-tight underline underline-offset-8 decoration-2 transition-opacity duration-300 hover:opacity-70 md:text-4xl"
+                className="text-accent text-2xl font-semibold tracking-tight underline underline-offset-8 decoration-2 transition-opacity duration-300 hover:opacity-70 md:text-4xl"
             >
                 artworks@javierferran.com
             </a>

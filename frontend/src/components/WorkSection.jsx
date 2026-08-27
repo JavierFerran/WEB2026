@@ -27,7 +27,7 @@ const ProjectCard = ({ project, index }) => (
             />
             <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100">
                 <div className="px-5 text-center">
-                    <p className="text-lg font-bold uppercase tracking-[0.12em] text-[color:var(--color-ink)] md:text-xl">
+                    <p className="text-lg font-semibold uppercase tracking-[0.12em] text-[color:var(--color-ink)] md:text-xl">
                         {project.titulo}
                     </p>
                     <p className="mt-1 text-xs uppercase tracking-[0.22em] text-muted-custom">
@@ -75,14 +75,14 @@ export const WorkSection = () => {
                                 data-testid={`filter-${cat.toLowerCase().replace(/\s+/g, "-")}`}
                                 onClick={() => setActive(cat)}
                                 aria-pressed={isActive}
-                                className={`text-xs font-bold uppercase tracking-[0.16em] transition-colors duration-300 md:text-sm ${
+                                className={`text-xs font-semibold uppercase tracking-[0.16em] transition-colors duration-300 md:text-sm ${
                                     isActive
                                         ? "text-[color:var(--color-ink)] underline underline-offset-8 decoration-2"
                                         : "text-[color:var(--color-muted)] hover:text-[color:var(--color-ink)]"
                                 }`}
                             >
                                 {cat}
-                                <sup className="ml-1 text-[0.65em] font-normal">{counts[cat]}</sup>
+                                <sup className="ml-1 text-[0.65em]">{counts[cat]}</sup>
                             </button>
                         );
                     })}

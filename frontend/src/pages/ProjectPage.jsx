@@ -39,7 +39,7 @@ export default function ProjectPage() {
                     <Link
                         to="/#work"
                         data-testid="back-to-work-button"
-                        className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-[color:var(--color-ink)] transition-colors duration-300 hover:text-accent"
+                        className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--color-ink)] transition-colors duration-300 hover:text-accent"
                     >
                         <ArrowLeft className="h-4 w-4" strokeWidth={1.5} />
                         Back to Work
@@ -100,7 +100,7 @@ export default function ProjectPage() {
                     <Link
                         to="/#work"
                         data-testid="back-to-work-button-bottom"
-                        className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-[color:var(--color-ink)] transition-colors duration-300 hover:text-accent"
+                        className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--color-ink)] transition-colors duration-300 hover:text-accent"
                     >
                         <ArrowLeft className="h-4 w-4" strokeWidth={1.5} />
                         Back to Work

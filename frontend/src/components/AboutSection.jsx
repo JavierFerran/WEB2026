@@ -66,7 +66,7 @@ export const AboutSection = () => {
                             >
                                 <span className="font-editorial text-sm italic text-accent">{ch.num}</span>
                                 <div>
-                                    <h3 className="text-sm font-bold uppercase tracking-[0.16em]">{ch.title}</h3>
+                                    <h3 className="text-sm font-semibold uppercase tracking-[0.16em]">{ch.title}</h3>
                                     <p className="mt-2 text-sm leading-relaxed text-neutral-600 md:text-base">
                                         {ch.text}
                                     </p>

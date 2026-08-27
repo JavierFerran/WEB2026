@@ -10,7 +10,7 @@ export const Hero = () => (
                 initial={{ y: "115%" }}
                 animate={{ y: 0 }}
                 transition={{ duration: 1, ease: EASE, delay: 0.15 }}
-                className="text-accent font-bold leading-[1.05] tracking-tight text-[clamp(1.5rem,3.4vw,3.1rem)] lg:whitespace-nowrap"
+                className="text-accent font-semibold leading-[1.05] tracking-tight text-[clamp(1.5rem,3.4vw,3.1rem)] lg:whitespace-nowrap"
             >
                 Brilliant advertising from a freelance art director.
             </motion.h1>
