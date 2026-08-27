@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Fuentes propias ---------- */
+@font-face {
+    font-family: "Akrobat";
+    src: url("./fonts/Akrobat-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Akrobat";
+    src: url("./fonts/Akrobat-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Akrobat";
+    src: url("./fonts/Akrobat-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+/*
+  Para activar Academy Engraved cuando tengas el archivo, súbelo a
+  /src/fonts/ y descomenta este bloque:
+@font-face {
+    font-family: "Academy Engraved";
+    src: url("./fonts/AcademyEngraved.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+*/
+
+/* ---------- Tokens de diseño ---------- */
+:root {
+    --color-bg: #ffffff;
+    --color-ink: #17181c;
+    --color-muted: #8a8f98;
+    --color-accent: #1d46c8; /* azul de acento reutilizable: logo, titular, links */
+    --font-sans: "Akrobat", "Arial Narrow", Arial, sans-serif;
+    --font-editorial: "Academy Engraved", "Didot", "Bodoni MT", "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+html {
+    scroll-behavior: auto;
+}
+
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+body {
+    margin: 0;
+    background: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+    background: var(--color-accent);
+    color: #fff;
+}
+
+.font-editorial {
+    font-family: var(--font-editorial);
+}
+.text-accent {
+    color: var(--color-accent);
+}
+.text-muted-custom {
+    color: var(--color-muted);
+}
+
+/* ---------- Marquee editorial ---------- */
+@keyframes marquee-x {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+.marquee-track {
+    animation: marquee-x 55s linear infinite;
+    will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .marquee-track {
+        animation: none;
+    }
+}
