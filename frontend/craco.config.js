@@ -98,7 +98,8 @@ let webpackConfig = {
         ],
       };
 
-      // Add health check plugin to webpack if enabled if (config.enableHealthCheck && healthPluginInstance) { webpackConfig.plugins.push(healthPluginInstance); } // Remove ForkTsCheckerWebpackPlugin (causes ajv/ajv-keywords version conflicts, not needed for a JS-only project) webpackConfig.plugins = webpackConfig.plugins.filter( (plugin) => plugin.constructor.name !== 'ForkTsCheckerWebpackPlugin' ); return webpackConfig;
+      / Add health check plugin to webpack if enabled if (config.enableHealthCheck && healthPluginInstance) { webpackConfig.plugins.push(healthPluginInstance); }
+// Remove ForkTsCheckerWebpackPlugin (causes ajv/ajv-keywords version conflicts, not needed for a JS-only project) webpackConfig.plugins = webpackConfig.plugins.filter( (plugin) => plugin.constructor.name !== 'ForkTsCheckerWebpackPlugin' ); return webpackConfig;
     },
   },
 };
