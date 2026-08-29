@@ -378,6 +378,27 @@ export const projects = [
         ],
         descripcion: "",
     },
+    {
+        id: 67,
+        slug: "atlantic-wilderness",
+        categoria: "Art Direction",
+        imagenPortada: "/assets/projects/atlantic-wilderness/img2.jpg",
+        videoPoster: "/assets/projects/atlantic-wilderness/img2.jpg",
+        titulo: "Atlantic Wilderness",
+        cliente: "Atlantic Wilderness",
+        año: 2025,
+        galeria: [
+            "/assets/projects/atlantic-wilderness/last-message.mp4",
+            "/assets/projects/atlantic-wilderness/img2.jpg",
+            "/assets/projects/atlantic-wilderness/img3.jpg",
+            "/assets/projects/atlantic-wilderness/img4.jpg",
+            "/assets/projects/atlantic-wilderness/img5.jpg",
+            "/assets/projects/atlantic-wilderness/img6.jpg",
+            "/assets/projects/atlantic-wilderness/img7.jpg",
+            "/assets/projects/atlantic-wilderness/img8.jpg",
+        ],
+        descripcion: "",
+    },
 ];
 
 export const getCategoryCounts = () => {
