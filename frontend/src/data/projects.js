@@ -171,6 +171,27 @@ export const projects = [
         anchoNativo: [undefined, undefined, 970, 300, 300],
         descripcion: "",
     },
+    {
+        id: 50,
+        slug: "ambito-cultural-eci",
+        categoria: "Art Direction",
+        imagenPortada: "/assets/projects/ambito-cultural/portada.jpg",
+        titulo: "Ámbito Cultural",
+        cliente: "El Corte Inglés",
+        año: 2026,
+        galeria: [
+            "/assets/projects/ambito-cultural/portada.jpg",
+            "/assets/projects/ambito-cultural/erretres.jpg",
+            "/assets/projects/ambito-cultural/boamistura.jpg",
+            "/assets/projects/ambito-cultural/molino.jpg",
+            "/assets/projects/ambito-cultural/snowman.jpg",
+            "/assets/projects/ambito-cultural/dia-10-libro-2011.jpg",
+            "/assets/projects/ambito-cultural/dia-libro-2011.jpg",
+            "/assets/projects/ambito-cultural/dia-libro-2012.jpg",
+            "/assets/projects/ambito-cultural/voz-de-galicia-130.jpg",
+        ],
+        descripcion: "",
+    },
 ];
 
 export const getCategoryCounts = () => {
