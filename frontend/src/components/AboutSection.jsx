@@ -37,10 +37,10 @@ export const AboutSection = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.9, ease: EASE }}
-                    className="relative aspect-[4/5] overflow-hidden"
+                    className="relative aspect-[16/10] overflow-hidden"
                 >
                     <motion.img
-                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1000' height='1250' viewBox='0 0 1000 1250'%3E%3Crect width='1000' height='1250' fill='%23e7e2d8'/%3E%3C/svg%3E"
+                        src="/assets/about/javier-ferran.jpg"
                         alt="Javier Ferrán, freelance art director"
                         style={{ y, scale: 1.12 }}
                         className="h-full w-full object-cover"
