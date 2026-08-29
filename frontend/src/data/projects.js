@@ -121,6 +121,17 @@ export const projects = [
         ],
         descripcion: "",
     },
+    {
+        id: 48,
+        slug: "knauf-packaging-gama-pro",
+        categoria: "Art Direction",
+        imagenPortada: "/assets/projects/knauf-packaging/portada.jpg",
+        titulo: "Knauf Packaging — Gama Pro",
+        cliente: "Knauf",
+        año: 2026,
+        galeria: ["/assets/projects/knauf-packaging/portada.jpg"],
+        descripcion: "",
+    },
 ];
 
 export const getCategoryCounts = () => {
