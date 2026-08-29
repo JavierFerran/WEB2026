@@ -222,6 +222,24 @@ export const projects = [
         ],
         descripcion: "",
     },
+    {
+        id: 52,
+        slug: "bat-vuse",
+        categoria: "Art Direction",
+        imagenPortada: "/assets/projects/bat-vuse/portada.jpg",
+        titulo: "British American Tobacco - Vuse",
+        cliente: "British American Tobacco",
+        año: 2023,
+        galeria: [
+            "/assets/projects/bat-vuse/portada.jpg",
+            "/assets/projects/bat-vuse/img2.jpg",
+            "/assets/projects/bat-vuse/img3.jpg",
+            "/assets/projects/bat-vuse/img4.jpg",
+            "/assets/projects/bat-vuse/img5.jpg",
+            "/assets/projects/bat-vuse/img6.jpg",
+        ],
+        descripcion: "",
+    },
 ];
 
 export const getCategoryCounts = () => {
