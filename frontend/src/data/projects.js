@@ -399,6 +399,20 @@ export const projects = [
         ],
         descripcion: "",
     },
+    {
+        id: 68,
+        slug: "atlantic-wilderness-app",
+        categoria: "Apps",
+        imagenPortada: "/assets/projects/atlantic-wilderness-app/portada.jpg",
+        titulo: "Atlantic Wilderness",
+        cliente: "Atlantic Wilderness",
+        año: 2024,
+        galeria: [
+            "/assets/projects/atlantic-wilderness-app/portada.jpg",
+        ],
+        descripcion:
+            "Explora la última frontera salvaje de Andalucía y el Algarve.\n\nAtlantic Wilderness es una guía digital interactiva que te invita a descubrir 24 localidades costeras únicas a lo largo del Atlántico al Sur de Europa, desde Tarifa (España) hasta Lagos (Portugal). La app combina naturaleza, aventura y tecnología para mostrarte playas vírgenes, rutas por parques naturales, y la fauna y flora que habita en este territorio salvaje: Mapas interactivos con geolocalización en tiempo real. Fotos reales y locales gracias a integración con Wikimedia Commons. Ficha detallada por cada localidad: Playas destacadas, Rutas o parques naturales, Especies de flora y fauna. Integra una IA que te permite analizar fotos de animales y sus huellas, plantas y lugares. También contiene un chat de información y una brújula. Funciona como app progresiva (PWA), sin instalación, disponible offline. Ideal para viajeros conscientes, exploradores de la naturaleza y amantes del Atlántico que buscan reconectar con la naturaleza y la costa más salvaje del Océano Atlántico. Esta App está en desarrollo y puede dar errores en tus conversaciones con IA, está en constante evolución y la estamos afinando hasta que quede perfecta.\n\n¿Cómo instalarla en el móvil? Si entras desde Chrome (Android) o Safari (iPhone), busca en el menú del navegador \"Añadir a la pantalla de inicio\". https://atlantic-wilderness.lovable.app",
+    },
 ];
 
 export const getCategoryCounts = () => {
