@@ -153,6 +153,24 @@ export const projects = [
         ],
         descripcion: "",
     },
+    {
+        id: 49,
+        slug: "michelin-alpin-7",
+        categoria: "Art Direction",
+        imagenPortada: "/assets/projects/michelin/portada.jpg",
+        titulo: "Michelin",
+        cliente: "Michelin",
+        año: 2026,
+        galeria: [
+            "/assets/projects/michelin/portada.jpg",
+            "/assets/projects/michelin/pantallazo.jpg",
+            "/assets/projects/michelin/banner-970x250.jpg",
+            "/assets/projects/michelin/banner-300x250.jpg",
+            "/assets/projects/michelin/banner-300x600.jpg",
+        ],
+        anchoNativo: [undefined, undefined, 970, 300, 300],
+        descripcion: "",
+    },
 ];
 
 export const getCategoryCounts = () => {
