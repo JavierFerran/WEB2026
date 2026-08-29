@@ -29,7 +29,7 @@ export const Header = () => {
                     <img
                         src="/assets/logo.png"
                         alt="Ferrán Studio"
-                        className="h-6 w-auto md:h-8"
+                        className="h-8 w-auto md:h-11"
                     />
                 </Link>
                 <nav className="flex items-center gap-6 md:gap-10" aria-label="Principal">
