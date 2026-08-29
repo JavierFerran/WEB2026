@@ -106,7 +106,7 @@ export const AboutSection = () => {
                             recognised by Creativepool, which has included me for six
                             consecutive years amongst the{" "}
                             <a
-                                href="https://creativepool.com/art-directors"
+                                href="https://creativepool.com/top-25/art-directors"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-accent underline underline-offset-4 transition-opacity duration-300 hover:opacity-70"
@@ -136,7 +136,7 @@ export const AboutSection = () => {
                         <ul className="mt-4 space-y-1.5 text-sm text-neutral-600 md:text-base">
                             {AGENCIES.map(({ years, name }) => (
                                 <li key={`${years}-${name}`} className="flex gap-3">
-                                    <span className="w-16 shrink-0 font-semibold italic text-accent">{years}</span>
+                                    <span className="w-16 shrink-0 font-semibold text-accent">{years}</span>
                                     <span>{name}</span>
                                 </li>
                             ))}

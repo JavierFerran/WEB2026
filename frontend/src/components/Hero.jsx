@@ -20,13 +20,11 @@ export const Hero = () => (
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: EASE, delay: 0.55 }}
-            className="mt-5 max-w-6xl text-sm leading-relaxed text-[color:var(--color-ink)] md:text-base"
+            className="mt-5 max-w-2xl text-sm leading-relaxed text-[color:var(--color-ink)] md:max-w-[1400px] md:text-base"
         >
             <p>
                 Over the last 25 years I have been working on-site and remotely
                 for many multinational advertising agencies in Madrid.
-            </p>
-            <p className="mt-1">
                 Creativepool, the social network connecting the global creative
                 industry, has included me in its{" "}
                 <a

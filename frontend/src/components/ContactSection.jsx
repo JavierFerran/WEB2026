@@ -13,14 +13,14 @@ import {
 const EASE = [0.16, 1, 0.3, 1];
 
 const SOCIALS = [
-    { name: "LinkedIn", href: "#", Icon: Linkedin, color: "#0A66C2" },
-    { name: "YouTube", href: "#", Icon: SiYoutube, color: "#FF0000" },
-    { name: "Vimeo", href: "#", Icon: SiVimeo, color: "#1AB7EA" },
-    { name: "Substack", href: "#", Icon: SiSubstack, color: "#FF6719" },
-    { name: "Instagram", href: "#", Icon: SiInstagram, color: "#E4405F" },
-    { name: "Facebook", href: "#", Icon: SiFacebook, color: "#1877F2" },
-    { name: "Twitter", href: "#", Icon: SiX, color: "#000000" },
-    { name: "TikTok", href: "#", Icon: SiTiktok, color: "#000000" },
+    { name: "LinkedIn", href: "https://www.linkedin.com/in/jferran/", Icon: Linkedin, color: "#0A66C2" },
+    { name: "YouTube", href: "https://www.youtube.com/@jferran", Icon: SiYoutube, color: "#FF0000" },
+    { name: "Vimeo", href: "https://vimeo.com/javierferran", Icon: SiVimeo, color: "#1AB7EA" },
+    { name: "Substack", href: "https://substack.com/@javierferran73", Icon: SiSubstack, color: "#FF6719" },
+    { name: "Instagram", href: "https://www.instagram.com/javierferran/", Icon: SiInstagram, color: "#E4405F" },
+    { name: "Facebook", href: "https://www.facebook.com/javier.ferran", Icon: SiFacebook, color: "#1877F2" },
+    { name: "Twitter", href: "https://x.com/javierferran", Icon: SiX, color: "#000000" },
+    { name: "TikTok", href: "https://www.tiktok.com/@ferran.studio", Icon: SiTiktok, color: "#000000" },
 ];
 
 export const ContactSection = () => (
@@ -64,6 +64,8 @@ export const ContactSection = () => (
                         key={name}
                         data-testid={`social-link-${name.toLowerCase()}`}
                         href={href}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         aria-label={name}
                         className="transition-all duration-300 hover:-translate-y-1"
                         style={{ color }}
