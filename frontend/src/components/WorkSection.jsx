@@ -8,14 +8,14 @@ const EASE = [0.16, 1, 0.3, 1];
 const LogoCard = ({ project }) => (
     <div
         data-testid={`project-card-${project.slug}`}
-        className="mb-5 flex aspect-square items-center justify-center break-inside-avoid border border-neutral-200 bg-white p-8"
+        className="flex aspect-square items-center justify-center bg-white p-8"
         aria-label={project.titulo}
     >
         <img
             src={project.imagenPortada}
             alt={project.titulo}
             loading="lazy"
-            style={{ maxWidth: "100%", maxHeight: "100%", width: "auto", height: "auto" }}
+            style={{ maxWidth: "75%", maxHeight: "75%", width: "auto", height: "auto" }}
         />
     </div>
 );
@@ -26,7 +26,7 @@ const ProjectCard = ({ project, index }) => (
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-40px" }}
         transition={{ duration: 0.7, ease: EASE, delay: (index % 5) * 0.07 }}
-        className="mb-5 break-inside-avoid"
+        className=""
     >
         <Link
             to={`/work/${project.slug}`}
@@ -57,10 +57,11 @@ const ProjectCard = ({ project, index }) => (
 export const WorkSection = () => {
     const [active, setActive] = useState("All");
     const counts = useMemo(() => getCategoryCounts(), []);
-    const filtered = useMemo(
-        () => (active === "All" ? projects : projects.filter((p) => p.categoria === active)),
-        [active],
-    );
+    const filtered = useMemo(() => {
+        const base = active === "All" ? projects : projects.filter((p) => p.categoria === active);
+        if (active !== "All") return base;
+        return [...base].sort((a, b) => CATEGORIES.indexOf(a.categoria) - CATEGORIES.indexOf(b.categoria));
+    }, [active]);
     const menu = ["All", ...CATEGORIES];
 
     return (
@@ -112,7 +113,7 @@ export const WorkSection = () => {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.35 }}
-                    className="mt-10 columns-1 gap-5 sm:columns-2 lg:columns-4 2xl:columns-5"
+                    className="mt-10 grid grid-cols-1 items-start gap-5 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5"
                 >
                     {filtered.map((project, i) =>
                         project.esLogo ? (

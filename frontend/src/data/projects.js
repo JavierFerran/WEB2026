@@ -1,7 +1,7 @@
 const ph = (w, h, color) =>
     `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='${w}' height='${h}' viewBox='0 0 ${w} ${h}'%3E%3Crect width='${w}' height='${h}' fill='${color.replace("#", "%23")}'/%3E%3C/svg%3E`;
 
-export const CATEGORIES = ["Art Direction", "Artworks", "Brands", "Web", "Apps"];
+export const CATEGORIES = ["Art Direction", "Apps", "Web", "Brands", "Artworks"];
 
 export const projects = [
     {
@@ -105,7 +105,7 @@ export const projects = [
     {
         id: 47,
         slug: "ndl-pro-health",
-        categoria: "Brands",
+        categoria: "Art Direction",
         imagenPortada: "/assets/projects/ndl-pro-health/portada.jpg",
         titulo: "NDL Pro-Health",
         cliente: "Cantabria Labs (marca de Rafa Nadal)",
