@@ -37,14 +37,22 @@ export const AboutSection = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.9, ease: EASE }}
-                    className="relative aspect-[16/10] overflow-hidden"
                 >
-                    <motion.img
-                        src="/assets/about/javier-ferran.jpg"
-                        alt="Javier Ferrán, freelance art director"
-                        style={{ y, scale: 1.12 }}
-                        className="h-full w-full object-cover"
-                    />
+                    <div className="relative aspect-[16/10] overflow-hidden">
+                        <motion.img
+                            src="/assets/about/javier-ferran.jpg"
+                            alt="Javier Ferrán, freelance art director"
+                            style={{ y, scale: 1.12 }}
+                            className="h-full w-full object-cover"
+                        />
+                    </div>
+                    <div className="relative mt-5 aspect-[16/10] overflow-hidden">
+                        <img
+                            src="/assets/about/javier-y-su-hijo.jpg"
+                            alt="Javier Ferrán con su hijo Javier"
+                            className="h-full w-full object-cover"
+                        />
+                    </div>
                 </motion.div>
                 <div className="max-w-2xl">
                     <motion.h2
@@ -66,7 +74,9 @@ export const AboutSection = () => {
                     >
                         <p className="font-semibold text-[color:var(--color-ink)]">
                             Javier Ferrán. Senior Art Director | Advertising · Production ·
-                            AI-Powered Workflows | Top 25 Art Director by Creativepool.
+                            AI-Powered Workflows.
+                            <br />
+                            Top 25 Art Director by Creativepool.
                             <br />
                             Creative Director | Brand Design Leader | AI Creative Strategist.
                         </p>
@@ -87,7 +97,7 @@ export const AboutSection = () => {
                             branding, advertising, retail, packaging, communications and
                             production from strategy through to execution.
                         </p>
-                        <p>My approach combines three disciplines that rarely coexist in a single role:</p>
+                        <p>My approach combines three disciplines:</p>
                         <ul className="list-disc space-y-1 pl-5">
                             {APPROACH.map((item) => (
                                 <li key={item}>{item}</li>
