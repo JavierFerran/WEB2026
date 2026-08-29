@@ -102,6 +102,25 @@ export const projects = [
     { id: 38, slug: "contractone", categoria: "Brands", imagenPortada: "/assets/brands/contractone.png", titulo: "ContractOne", cliente: "—", año: 2026, galeria: ["/assets/brands/contractone.png"], descripcion: "", esLogo: true },
     { id: 39, slug: "caprice", categoria: "Brands", imagenPortada: "/assets/brands/caprice.png", titulo: "Caprice", cliente: "—", año: 2026, galeria: ["/assets/brands/caprice.png"], descripcion: "", esLogo: true },
     { id: 40, slug: "acolsa", categoria: "Brands", imagenPortada: "/assets/brands/acolsa.png", titulo: "Acolsa", cliente: "—", año: 2026, galeria: ["/assets/brands/acolsa.png"], descripcion: "", esLogo: true },
+    {
+        id: 47,
+        slug: "ndl-pro-health",
+        categoria: "Brands",
+        imagenPortada: "/assets/projects/ndl-pro-health/portada.jpg",
+        titulo: "NDL Pro-Health",
+        cliente: "Cantabria Labs (marca de Rafa Nadal)",
+        año: 2026,
+        galeria: [
+            "/assets/projects/ndl-pro-health/portada.jpg",
+            "/assets/projects/ndl-pro-health/omega3.jpg",
+            "/assets/projects/ndl-pro-health/articulations.jpg",
+            "/assets/projects/ndl-pro-health/immune-system.jpg",
+            "/assets/projects/ndl-pro-health/everyday-20.jpg",
+            "/assets/projects/ndl-pro-health/mcomplex-20.jpg",
+            "/assets/projects/ndl-pro-health/recovery-20.jpg",
+        ],
+        descripcion: "",
+    },
 ];
 
 export const getCategoryCounts = () => {
