@@ -240,6 +240,20 @@ export const projects = [
         ],
         descripcion: "",
     },
+    {
+        id: 53,
+        slug: "forus-trinidad",
+        categoria: "Art Direction",
+        imagenPortada: "/assets/projects/forus-trinidad/portada.jpg",
+        titulo: "Forus Trinidad",
+        cliente: "Forus",
+        año: 2020,
+        galeria: [
+            "/assets/projects/forus-trinidad/portada.jpg",
+            "/assets/projects/forus-trinidad/img2.jpg",
+        ],
+        descripcion: "",
+    },
 ];
 
 export const getCategoryCounts = () => {
