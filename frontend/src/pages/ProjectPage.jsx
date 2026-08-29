@@ -8,6 +8,26 @@ import { projects } from "@/data/projects";
 import { usePageMeta } from "@/hooks/usePageMeta";
 import { scrollToTop } from "@/lib/scroll";
 
+const linkify = (text) => {
+    const urlPattern = /(https?:\/\/[^\s]+)/g;
+    const parts = text.split(urlPattern);
+    return parts.map((part, i) =>
+        /^https?:\/\//.test(part) ? (
+            <a
+                key={i}
+                href={part}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent underline underline-offset-4 hover:opacity-70"
+            >
+                {part}
+            </a>
+        ) : (
+            part
+        ),
+    );
+};
+
 const EASE = [0.16, 1, 0.3, 1];
 
 export default function ProjectPage() {
@@ -68,24 +88,49 @@ export default function ProjectPage() {
                 </motion.p>
 
                 <div data-testid="project-gallery" className="mt-10 space-y-6 md:space-y-10">
-                    {project.galeria.map((img, i) => (
-                        <motion.img
-                            key={i}
-                            src={img}
-                            alt={`${project.titulo} — imagen ${i + 1}`}
-                            loading={i === 0 ? "eager" : "lazy"}
-                            initial={{ opacity: 0, y: 40 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true, margin: "-60px" }}
-                            transition={{ duration: 0.8, ease: EASE }}
-                            style={
-                                project.anchoNativo?.[i]
-                                    ? { maxWidth: `${project.anchoNativo[i]}px`, width: "100%", margin: "0 auto" }
-                                    : undefined
-                            }
-                            className="block h-auto w-full"
-                        />
-                    ))}
+                    {project.galeria.map((item, i) => {
+                        const isVideo = /\.mp4$/i.test(item);
+                        const style = project.anchoNativo?.[i]
+                            ? { maxWidth: `${project.anchoNativo[i]}px`, width: "100%", margin: "0 auto" }
+                            : undefined;
+
+                        if (isVideo) {
+                            return (
+                                <motion.video
+                                    key={i}
+                                    src={item}
+                                    poster={project.videoPoster}
+                                    autoPlay
+                                    muted
+                                    loop
+                                    playsInline
+                                    controls
+                                    preload="auto"
+                                    initial={{ opacity: 0, y: 40 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true, margin: "-60px" }}
+                                    transition={{ duration: 0.8, ease: EASE }}
+                                    style={style}
+                                    className="block h-auto w-full"
+                                />
+                            );
+                        }
+
+                        return (
+                            <motion.img
+                                key={i}
+                                src={item}
+                                alt={`${project.titulo} — imagen ${i + 1}`}
+                                loading={i === 0 ? "eager" : "lazy"}
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, margin: "-60px" }}
+                                transition={{ duration: 0.8, ease: EASE }}
+                                style={style}
+                                className="block h-auto w-full"
+                            />
+                        );
+                    })}
                 </div>
 
                 <motion.div
@@ -102,7 +147,7 @@ export default function ProjectPage() {
                             style={{ whiteSpace: "pre-line" }}
                             className="text-base leading-relaxed text-neutral-700 md:text-lg"
                         >
-                            {para}
+                            {linkify(para)}
                         </p>
                     ))}
                 </motion.div>
