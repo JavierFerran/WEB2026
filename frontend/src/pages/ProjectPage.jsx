@@ -78,6 +78,11 @@ export default function ProjectPage() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-60px" }}
                             transition={{ duration: 0.8, ease: EASE }}
+                            style={
+                                project.anchoNativo?.[i]
+                                    ? { maxWidth: `${project.anchoNativo[i]}px`, width: "100%", margin: "0 auto" }
+                                    : undefined
+                            }
                             className="block h-auto w-full"
                         />
                     ))}

@@ -25,6 +25,7 @@ export const Hero = () => (
             <p>
                 Over the last 25 years I have been working on-site and remotely
                 for many multinational advertising agencies in Madrid.
+                <br className="hidden md:block" />
                 Creativepool, the social network connecting the global creative
                 industry, has included me in its{" "}
                 <a

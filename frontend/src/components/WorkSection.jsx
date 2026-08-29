@@ -5,6 +5,21 @@ import { CATEGORIES, getCategoryCounts, projects } from "@/data/projects";
 
 const EASE = [0.16, 1, 0.3, 1];
 
+const LogoCard = ({ project }) => (
+    <div
+        data-testid={`project-card-${project.slug}`}
+        className="mb-5 flex aspect-square items-center justify-center break-inside-avoid border border-neutral-200 bg-white p-8"
+        aria-label={project.titulo}
+    >
+        <img
+            src={project.imagenPortada}
+            alt={project.titulo}
+            loading="lazy"
+            style={{ maxWidth: "100%", maxHeight: "100%", width: "auto", height: "auto" }}
+        />
+    </div>
+);
+
 const ProjectCard = ({ project, index }) => (
     <motion.div
         initial={{ opacity: 0, y: 32 }}
@@ -99,9 +114,13 @@ export const WorkSection = () => {
                     transition={{ duration: 0.35 }}
                     className="mt-10 columns-1 gap-5 sm:columns-2 lg:columns-4 2xl:columns-5"
                 >
-                    {filtered.map((project, i) => (
-                        <ProjectCard key={project.slug} project={project} index={i} />
-                    ))}
+                    {filtered.map((project, i) =>
+                        project.esLogo ? (
+                            <LogoCard key={project.slug} project={project} />
+                        ) : (
+                            <ProjectCard key={project.slug} project={project} index={i} />
+                        ),
+                    )}
                 </motion.div>
             </AnimatePresence>
         </section>
