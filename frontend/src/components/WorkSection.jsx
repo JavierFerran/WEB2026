@@ -57,7 +57,7 @@ export const WorkSection = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, ease: EASE }}
-                    className="font-semibold text-5xl leading-none md:text-6xl"
+                    className="font-semibold text-4xl leading-none md:text-5xl"
                 >
                     Work
                 </motion.h2>
