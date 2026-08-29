@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { WorkSection } from "@/components/WorkSection";
-import { Marquee } from "@/components/Marquee";
 import { AboutSection } from "@/components/AboutSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
@@ -31,7 +30,6 @@ export default function HomePage() {
             <main>
                 <Hero />
                 <WorkSection />
-                <Marquee />
                 <AboutSection />
                 <ContactSection />
             </main>

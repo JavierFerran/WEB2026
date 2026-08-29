@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const EASE = [0.16, 1, 0.3, 1];
 
 export const Hero = () => (
-    <section data-testid="hero-section" className="mx-auto max-w-[1680px] px-6 pt-10 md:px-14 md:pt-16">
+    <section data-testid="hero-section" className="mx-auto max-w-[1920px] px-4 pt-10 md:px-10 md:pt-16">
         <div className="overflow-hidden pb-1">
             <motion.h1
                 data-testid="hero-headline"
@@ -20,7 +20,7 @@ export const Hero = () => (
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: EASE, delay: 0.55 }}
-            className="mt-5 max-w-4xl text-sm leading-relaxed text-[color:var(--color-ink)] md:text-base"
+            className="mt-5 max-w-6xl text-sm leading-relaxed text-[color:var(--color-ink)] md:text-base"
         >
             <p>
                 Over the last 25 years I have been working on-site and remotely

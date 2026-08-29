@@ -24,7 +24,7 @@ export const Header = () => {
             data-testid="site-header"
             className="sticky top-0 z-50 bg-white/90 backdrop-blur-md"
         >
-            <div className="mx-auto flex max-w-[1680px] items-center justify-between px-6 py-5 md:px-14 md:py-7">
+            <div className="mx-auto flex max-w-[1920px] items-center justify-between px-4 py-5 md:px-10 md:py-7">
                 <Link to="/" data-testid="header-logo" aria-label="Ferrán Studio — home">
                     <img
                         src="/assets/logo.png"

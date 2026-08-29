@@ -49,7 +49,7 @@ export const WorkSection = () => {
     const menu = ["All", ...CATEGORIES];
 
     return (
-        <section id="work" data-testid="work-section" className="mx-auto max-w-[1680px] scroll-mt-24 px-6 pt-16 md:px-14 md:pt-24">
+        <section id="work" data-testid="work-section" className="mx-auto max-w-[1920px] scroll-mt-24 px-4 pt-16 md:px-10 md:pt-24">
             <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
                 <motion.h2
                     data-testid="work-section-title"
