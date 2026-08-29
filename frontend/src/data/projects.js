@@ -53,6 +53,23 @@ export const projects = [
         ],
         descripcion: "Hoy España ganará el Mundial de Fútbol 2026 y quizá tu marca esté perdiendo una oportunidad única para hablar de forma épica, si no lo ha hecho ya.\n\nHabrá otras fechas a lo largo del año para conectar con tu público, pero deberías tener ya un calendario de comunicación que recoja los grandes eventos del año. Si a eso le sumas una estrategia creativa, puedes asegurar tus objetivos, ya sean de ventas, de notoriedad o los que persigas.\n\nPara lograrlo hace falta, sobre todo, una idea fuerte, de esas que aguantan cualquier estilo que le pongas encima. Con una dirección de arte cuidada, puedes contar la misma historia con pinceles completamente distintos, como demuestran las gráficas que vengo publicando estos días en mi perfil.\n\nSi diriges una agencia y tu equipo necesita un freelance de apoyo en momentos puntuales, o crees que tu marca podría contar mejor lo que hace, hablemos.\n\nConfirmado: España, campeona del mundo, bordaremos la segunda estrella. Estas dos gráficas que he estado publicando días atrás, no necesitaban acertar el resultado para funcionar, pero cuando además lo hacen, la historia se cuenta sola.\n\nSi tu marca quiere estar lista la próxima vez, o si tu equipo creativo necesita una mano, contáctame y hablamos.",
     },
+    {
+        id: 41,
+        slug: "fruitness-class",
+        categoria: "Art Direction",
+        imagenPortada: "/assets/projects/fruitness-class/portada.jpg",
+        titulo: "Fruitness Class",
+        cliente: "DHL",
+        año: 2011,
+        galeria: [
+            "/assets/projects/fruitness-class/portada.jpg",
+            "/assets/projects/fruitness-class/f1.jpg",
+            "/assets/projects/fruitness-class/alfombra-roja.jpg",
+        ],
+        anchoNativo: [505, 820, 491],
+        descripcion:
+            "¿Cuánto dura una buena idea?\n\nEste anuncio para DHL tiene casi 15 años. Y se podría publicar hoy y seguiría funcionando perfectamente.\n\nEra un brief para la Fruit Attraction, la Feria Internacional de Frutas y Hortalizas. Lo creé con Photoshop e InDesign. Llevó un par de semanas de intenso trabajo, muchas horas al día frente a la pantalla. La Inteligencia Artificial no existía. Existía la Dirección de Arte, el Copywriting, la búsqueda de un concepto creativo y la obsesión por un buen craft.\n\nEl proceso de trabajo empezaba de verdad en una libreta, apuntando ideas a mano. Sí, a mano.\n\nDevorando revistas de diseño y las pocas webs que existían entonces. Buscando la fotografía exacta en bancos de imágenes y catálogos físicos. Reescribiendo titulares y textos una y otra vez. Pensando. No pidiendo diez variaciones a Claude para elegir la menos mala.\n\nEse entrenamiento de criterio hoy casi no existe, aunque también creo que ha evolucionado.\n\nSi este anuncio sigue vigente más de 15 años después, es porque es realmente bueno (y no lo digo solo porque sea mío). Forma parte de mi book de proyectos, elegido 6 años consecutivos en el Top 25 Most Influential & Inspiring Art Directors Worldwide por Creativepool.\n\nHoy, mi criterio trabaja junto a la IA generativa para llegar antes a la idea correcta y multiplicar las posibilidades de ejecución. Lo que llevaba semanas, hoy fluye más rápido, pero con el mismo nivel de exigencia.\n\nY conseguir algo así para tu marca es mucho más fácil de lo que parece. Si eres director de marketing o director general, esto es lo que puedo poner a trabajar para tu marca:\nCampañas de publicidad, en gran formato, exterior o digital, con un concepto real detrás. Packaging que destaque en el lineal antes de que nadie lea una palabra.\nPitchs de venta y ofertas comerciales que convenzan antes de la primera objeción.\nComunicación y diseño de marca con criterio, no con plantillas.\n\nY si eres headhunter, o trabajas en una agencia de publicidad que ahora mismo está buscando un perfil como el mío, échale un vistazo a mi perfil y web y no dudes en escribirme.\n\nSi la mayoría de tus ventas del año van de septiembre a diciembre, tienes que empezar ya a tomar decisiones. Decide hacer buena publicidad y tener una excelente comunicación para tu empresa.",
+    },
     { id: 9, slug: "proyecto-pendiente-01", categoria: "Art Direction", imagenPortada: ph(1200, 1500, "#e3ddd2"), titulo: "Proyecto pendiente", cliente: "—", año: 2026, galeria: [ph(1200, 1500, "#e3ddd2")], descripcion: "Proyecto pendiente de documentar." },
     { id: 10, slug: "proyecto-pendiente-02", categoria: "Art Direction", imagenPortada: ph(1500, 950, "#dce3ec"), titulo: "Proyecto pendiente", cliente: "—", año: 2026, galeria: [ph(1500, 950, "#dce3ec")], descripcion: "Proyecto pendiente de documentar." },
     { id: 11, slug: "proyecto-pendiente-03", categoria: "Art Direction", imagenPortada: ph(1100, 1100, "#e8e0d6"), titulo: "Proyecto pendiente", cliente: "—", año: 2026, galeria: [ph(1100, 1100, "#e8e0d6")], descripcion: "Proyecto pendiente de documentar." },
@@ -85,23 +102,6 @@ export const projects = [
     { id: 38, slug: "contractone", categoria: "Brands", imagenPortada: "/assets/brands/contractone.png", titulo: "ContractOne", cliente: "—", año: 2026, galeria: ["/assets/brands/contractone.png"], descripcion: "", esLogo: true },
     { id: 39, slug: "caprice", categoria: "Brands", imagenPortada: "/assets/brands/caprice.png", titulo: "Caprice", cliente: "—", año: 2026, galeria: ["/assets/brands/caprice.png"], descripcion: "", esLogo: true },
     { id: 40, slug: "acolsa", categoria: "Brands", imagenPortada: "/assets/brands/acolsa.png", titulo: "Acolsa", cliente: "—", año: 2026, galeria: ["/assets/brands/acolsa.png"], descripcion: "", esLogo: true },
-    {
-        id: 41,
-        slug: "fruitness-class",
-        categoria: "Art Direction",
-        imagenPortada: "/assets/projects/fruitness-class/portada.jpg",
-        titulo: "Fruitness Class",
-        cliente: "DHL",
-        año: 2011,
-        galeria: [
-            "/assets/projects/fruitness-class/portada.jpg",
-            "/assets/projects/fruitness-class/f1.jpg",
-            "/assets/projects/fruitness-class/alfombra-roja.jpg",
-        ],
-        anchoNativo: [505, 820, 491],
-        descripcion:
-            "¿Cuánto dura una buena idea?\n\nEste anuncio para DHL tiene casi 15 años. Y se podría publicar hoy y seguiría funcionando perfectamente.\n\nEra un brief para la Fruit Attraction, la Feria Internacional de Frutas y Hortalizas. Lo creé con Photoshop e InDesign. Llevó un par de semanas de intenso trabajo, muchas horas al día frente a la pantalla. La Inteligencia Artificial no existía. Existía la Dirección de Arte, el Copywriting, la búsqueda de un concepto creativo y la obsesión por un buen craft.\n\nEl proceso de trabajo empezaba de verdad en una libreta, apuntando ideas a mano. Sí, a mano.\n\nDevorando revistas de diseño y las pocas webs que existían entonces. Buscando la fotografía exacta en bancos de imágenes y catálogos físicos. Reescribiendo titulares y textos una y otra vez. Pensando. No pidiendo diez variaciones a Claude para elegir la menos mala.\n\nEse entrenamiento de criterio hoy casi no existe, aunque también creo que ha evolucionado.\n\nSi este anuncio sigue vigente más de 15 años después, es porque es realmente bueno (y no lo digo solo porque sea mío). Forma parte de mi book de proyectos, elegido 6 años consecutivos en el Top 25 Most Influential & Inspiring Art Directors Worldwide por Creativepool.\n\nHoy, mi criterio trabaja junto a la IA generativa para llegar antes a la idea correcta y multiplicar las posibilidades de ejecución. Lo que llevaba semanas, hoy fluye más rápido, pero con el mismo nivel de exigencia.\n\nY conseguir algo así para tu marca es mucho más fácil de lo que parece. Si eres director de marketing o director general, esto es lo que puedo poner a trabajar para tu marca:\nCampañas de publicidad, en gran formato, exterior o digital, con un concepto real detrás. Packaging que destaque en el lineal antes de que nadie lea una palabra.\nPitchs de venta y ofertas comerciales que convenzan antes de la primera objeción.\nComunicación y diseño de marca con criterio, no con plantillas.\n\nY si eres headhunter, o trabajas en una agencia de publicidad que ahora mismo está buscando un perfil como el mío, échale un vistazo a mi perfil y web y no dudes en escribirme.\n\nSi la mayoría de tus ventas del año van de septiembre a diciembre, tienes que empezar ya a tomar decisiones. Decide hacer buena publicidad y tener una excelente comunicación para tu empresa.",
-    },
 ];
 
 export const getCategoryCounts = () => {
