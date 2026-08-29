@@ -362,6 +362,22 @@ export const projects = [
         descripcion:
             "https://reverso.javierferran.com\n\nREVERSO, the Art Director's thinking engine.\n\nREVERSO es una herramienta gratuita de pensamiento lateral para Directores de Arte, Redactores y Planners. Escribes tu idea, frase o briefing completo. Sin formularios, sin opciones. Solo escribes y pulsas un botón.\n\nEl sistema genera 6 rutas conceptuales construidas desde técnicas que no parten del brief, sino de la realidad que lo rodea: Inversión Directa, Sombrero Negro, Analogía Forzada, Punto de Vista Radical, Reducción al Absurdo y Tensión de Marca. Cada ruta recibe un score de Singularidad: S = (I × P) / C. Innovación por Pertinencia dividido entre Cliché. Si la puntuación es baja, la exportación se bloquea. REVERSO no complace, juzga.\n\nEl motor de conocimiento de REVERSO tiene acceso a:\nArchivos publicitarios: Ads of the World, D&AD The Work, Cannes Lions, AdsSpot, Ad*Access Duke University (prensa 1911-1955), AdViews Duke (TV vintage), LoveTheWork.\nDirectores creativos: Bernbach, Abbott, Clow, Wieden, Krone, Lois, Trott, French, Goodby, Silverstein, Droga, Hoffman, Ramos, Tutssel, Moro, Ostiglia, Villar y el equipo de DAVID Madrid, entre otros. Agencias: Wieden+Kennedy, DDB, TBWA, Ogilvy, BBH, Droga5, Mother London, BBDO, Leo Burnett, McCann, adam&eveDDB, Marcel Paris, Jung von Matt, GUT, DAVID Madrid, LOLA MullenLowe, Sra. Rushmore, El Ruso de Rocky y más.\nFundiciones tipográficas: Commercial Type, Klim Type, Grilli Type, Dinamo, Hoefler&Co, Frere-Jones, FontFont, Emigre. Cuando recomienda una fuente de pago, siempre da una alternativa gratuita.\n\nTambién ofrece 6 fuentes de imágenes reales por ruta, ninguna generada por IA: Pexels, Unsplash, Openverse, Met Museum Open Access, Europeana y Smithsonian Open Access. Fotografía editorial, archivo histórico, museos nacionales.\n\nREVERSO no guarda ningún dato. Ni tu brief, ni tus resultados, ni ninguna información personal. Cada sesión es nueva y efímera. Lo que escribes se queda entre tú y el motor.\n\nCon Claude creé la ecuación de Singularidad, el system prompt que instruye al motor de IA, la arquitectura de referencias publicitarias. Todo construido con argumentos, no con prompts vacíos. Con Perplexity un design system completo: paleta de color, tipografías, componentes, reglas de accesibilidad y contraste, y lo modifiqué a mi gusto. Emergent desarrolló la app. React, FastAPI, conexiones a APIs, lógica de exportación. Una interfaz funcional construida desde las especificaciones que Claude y yo habíamos definido. GitHub guarda el código y sincroniza los cambios automáticamente con el servidor. Render aloja el backend, el servidor Python que procesa los briefs, llama a Groq y coordina las seis fuentes de imágenes. Vercel publica el frontend con URL permanente.\n\nREVERSO es gratuita, está en beta abierta y sigue en fase de producción: reverso.javierferran.com. Te animo a probarla, tendrás una respuesta entre 10 y 80 segundos. REVERSO busca un socio, puedes conseguir más información aquí: https://reversopitch.javierferran.com",
     },
+    {
+        id: 66,
+        slug: "a3d-building",
+        categoria: "Art Direction",
+        imagenPortada: "/assets/projects/a3d-building/portada.jpg",
+        titulo: "A3D Building",
+        cliente: "A3D Building",
+        año: 2021,
+        galeria: [
+            "/assets/projects/a3d-building/portada.jpg",
+            "/assets/projects/a3d-building/img2.jpg",
+            "/assets/projects/a3d-building/img3.jpg",
+            "/assets/projects/a3d-building/img4.jpg",
+        ],
+        descripcion: "",
+    },
 ];
 
 export const getCategoryCounts = () => {
