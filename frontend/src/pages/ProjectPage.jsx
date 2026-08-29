@@ -89,11 +89,17 @@ export default function ProjectPage() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, ease: EASE }}
-                    className="mt-12 max-w-2xl"
+                    className="mt-12 max-w-2xl space-y-4"
                 >
-                    <p className="text-base leading-relaxed text-neutral-700 md:text-lg">
-                        {project.descripcion}
-                    </p>
+                    {project.descripcion.split("\n\n").map((para, i) => (
+                        <p
+                            key={i}
+                            style={{ whiteSpace: "pre-line" }}
+                            className="text-base leading-relaxed text-neutral-700 md:text-lg"
+                        >
+                            {para}
+                        </p>
+                    ))}
                 </motion.div>
 
                 <div className="mt-14">
