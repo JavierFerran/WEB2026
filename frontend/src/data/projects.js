@@ -102,6 +102,11 @@ export const projects = [
     { id: 38, slug: "contractone", categoria: "Brands", imagenPortada: "/assets/brands/contractone.png", titulo: "ContractOne", cliente: "—", año: 2026, galeria: ["/assets/brands/contractone.png"], descripcion: "", esLogo: true },
     { id: 39, slug: "caprice", categoria: "Brands", imagenPortada: "/assets/brands/caprice.png", titulo: "Caprice", cliente: "—", año: 2026, galeria: ["/assets/brands/caprice.png"], descripcion: "", esLogo: true },
     { id: 40, slug: "acolsa", categoria: "Brands", imagenPortada: "/assets/brands/acolsa.png", titulo: "Acolsa", cliente: "—", año: 2026, galeria: ["/assets/brands/acolsa.png"], descripcion: "", esLogo: true },
+    { id: 54, slug: "patios-cordobeses-50-aniversario", categoria: "Brands", imagenPortada: "/assets/brands/patios50.png", titulo: "Asociación de Amigos de los Patios Cordobeses", cliente: "—", año: 2026, galeria: ["/assets/brands/patios50.png"], descripcion: "", esLogo: true },
+    { id: 55, slug: "portfolio-review", categoria: "Brands", imagenPortada: "/assets/brands/portfolioreview.png", titulo: "Portfolio Review", cliente: "—", año: 2026, galeria: ["/assets/brands/portfolioreview.png"], descripcion: "", esLogo: true },
+    { id: 56, slug: "ayuda-digital-covid", categoria: "Brands", imagenPortada: "/assets/brands/ayudacovid.png", titulo: "Ayuda Digital COVID", cliente: "—", año: 2026, galeria: ["/assets/brands/ayudacovid.png"], descripcion: "", esLogo: true },
+    { id: 57, slug: "hacking-covid", categoria: "Brands", imagenPortada: "/assets/brands/hackingcovid.png", titulo: "Hacking COVID", cliente: "—", año: 2026, galeria: ["/assets/brands/hackingcovid.png"], descripcion: "", esLogo: true },
+    { id: 58, slug: "conquer-your-space", categoria: "Brands", imagenPortada: "/assets/brands/conquerspace.png", titulo: "Conquer Your Space", cliente: "—", año: 2026, galeria: ["/assets/brands/conquerspace.png"], descripcion: "", esLogo: true },
     {
         id: 47,
         slug: "ndl-pro-health",
