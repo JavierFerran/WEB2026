@@ -32,7 +32,7 @@ export const AboutSection = () => {
                             className="h-full w-full object-cover"
                         />
                     </div>
-                    <div className="relative mt-5 aspect-[16/10] overflow-hidden">
+                    <div className="relative mt-5 overflow-hidden" style={{ aspectRatio: "1500 / 430" }}>
                         <img
                             src="/assets/about/javier-y-su-hijo.jpg"
                             alt="Javier Ferrán con su hijo Javier"
