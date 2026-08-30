@@ -4,6 +4,7 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { WorkSection } from "@/components/WorkSection";
 import { AboutSection } from "@/components/AboutSection";
+import { CreativeJourneySection } from "@/components/CreativeJourneySection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { usePageMeta } from "@/hooks/usePageMeta";
@@ -31,6 +32,7 @@ export default function HomePage() {
                 <Hero />
                 <WorkSection />
                 <AboutSection />
+                <CreativeJourneySection />
                 <ContactSection />
             </main>
             <Footer />
