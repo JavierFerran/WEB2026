@@ -18,7 +18,7 @@ export const projects = [
         slug: "ambar-eclipse",
         categoria: "Art Direction",
         imagenPortada: "/assets/projects/ambar-eclipse/portada.jpg",
-        titulo: "Cerveza Ambar — Eclipse Solar",
+        titulo: "Cervezas Ambar",
         cliente: "Cervezas Ambar (Grupo AGORA)",
         año: 2026,
         galeria: ["/assets/projects/ambar-eclipse/portada.jpg"],
@@ -38,10 +38,10 @@ export const projects = [
     },
     {
         id: 46,
-        slug: "knight-without-shield",
+        slug: "mundial-futbol-españa",
         categoria: "Art Direction",
         imagenPortada: "/assets/projects/knight-without-shield/portada.jpg",
-        titulo: "Knight Without Shield",
+        titulo: "Mundial de Fútbol 2026",
         cliente: "Selección Española de Fútbol",
         año: 2026,
         galeria: [
@@ -99,7 +99,7 @@ export const projects = [
         categoria: "Art Direction",
         imagenPortada: "/assets/projects/ndl-pro-health/portada.jpg",
         titulo: "NDL Pro-Health",
-        cliente: "Cantabria Labs (marca de Rafa Nadal)",
+        cliente: "Cantabria Labs & NDL Pro-Health",
         año: 2026,
         galeria: [
             "/assets/projects/ndl-pro-health/portada.jpg",
@@ -117,9 +117,9 @@ export const projects = [
         slug: "knauf-packaging-gama-pro",
         categoria: "Art Direction",
         imagenPortada: "/assets/projects/knauf-packaging/portada.jpg",
-        titulo: "Knauf Packaging — Gama Pro",
+        titulo: "Knauf Packaging Gama Pro",
         cliente: "Knauf",
-        año: 2026,
+        año: 2025,
         galeria: [
             "/assets/projects/knauf-packaging/portada.jpg",
             "/assets/projects/knauf-packaging/gallery-01.jpg",
@@ -151,7 +151,7 @@ export const projects = [
         imagenPortada: "/assets/projects/michelin/portada.jpg",
         titulo: "Michelin",
         cliente: "Michelin",
-        año: 2026,
+        año: 2024,
         galeria: [
             "/assets/projects/michelin/portada.jpg",
             "/assets/projects/michelin/pantallazo.jpg",
@@ -169,7 +169,7 @@ export const projects = [
         imagenPortada: "/assets/projects/ambito-cultural/portada.jpg",
         titulo: "Ámbito Cultural",
         cliente: "El Corte Inglés",
-        año: 2026,
+        año: 2014,
         galeria: [
             "/assets/projects/ambito-cultural/portada.jpg",
             "/assets/projects/ambito-cultural/erretres.jpg",
@@ -190,7 +190,7 @@ export const projects = [
         imagenPortada: "/assets/projects/el-corte-ingles/01.jpg",
         titulo: "El Corte Inglés",
         cliente: "El Corte Inglés",
-        año: 2026,
+        año: 2014,
         galeria: [
             "/assets/projects/el-corte-ingles/01.jpg",
             "/assets/projects/el-corte-ingles/02.jpg",
@@ -218,7 +218,7 @@ export const projects = [
         slug: "bat-vuse",
         categoria: "Art Direction",
         imagenPortada: "/assets/projects/bat-vuse/portada.jpg",
-        titulo: "British American Tobacco - Vuse",
+        titulo: "British American Tobacco & Vuse",
         cliente: "British American Tobacco",
         año: 2023,
         galeria: [
@@ -277,7 +277,7 @@ export const projects = [
         categoria: "Art Direction",
         imagenPortada: "/assets/projects/elbicho-artwork/portada.jpg",
         titulo: "elbicho",
-        cliente: "—",
+        cliente: "elbicho",
         año: 2008,
         galeria: [
             "/assets/projects/elbicho-artwork/portada.jpg",
@@ -305,7 +305,7 @@ export const projects = [
         categoria: "Art Direction",
         imagenPortada: "/assets/projects/el-submarino/portada.jpg",
         titulo: "El Submarino",
-        cliente: "—",
+        cliente: "El Submarino",
         año: 2016,
         galeria: [
             "/assets/projects/el-submarino/portada.jpg",
@@ -320,7 +320,7 @@ export const projects = [
         categoria: "Artworks",
         imagenPortada: "/assets/projects/stencil/portada.jpg",
         titulo: "Stencil",
-        cliente: "—",
+        cliente: "Javier Ferrán",
         año: 2000,
         galeria: [
             "/assets/projects/stencil/portada.jpg",
@@ -352,7 +352,7 @@ export const projects = [
         imagenPortada: "/assets/projects/reverso/poster.jpg",
         videoPoster: "/assets/projects/reverso/poster.jpg",
         titulo: "REVERSO",
-        cliente: "—",
+        cliente: "FERRÁN STUDIO",
         año: 2026,
         galeria: [
             "/assets/projects/reverso/reverso-show.mp4",
@@ -386,7 +386,7 @@ export const projects = [
         imagenPortada: "/assets/projects/atlantic-wilderness/img2.jpg",
         videoPoster: "/assets/projects/atlantic-wilderness/img2.jpg",
         titulo: "Atlantic Wilderness",
-        cliente: "Atlantic Wilderness",
+        cliente: "FERRÁN STUDIO",
         año: 2025,
         galeria: [
             "/assets/projects/atlantic-wilderness/last-message.mp4",
@@ -406,7 +406,7 @@ export const projects = [
         categoria: "Apps",
         imagenPortada: "/assets/projects/atlantic-wilderness-app/portada.jpg",
         titulo: "Atlantic Wilderness",
-        cliente: "Atlantic Wilderness",
+        cliente: "FERRÁN STUDIO",
         año: 2024,
         galeria: [
             "/assets/projects/atlantic-wilderness-app/portada.jpg",
@@ -420,7 +420,7 @@ export const projects = [
         categoria: "Art Direction",
         imagenPortada: "/assets/projects/reve-contest/portada.jpg",
         titulo: "Reve Generative AI Contest",
-        cliente: "—",
+        cliente: "FERRÁN STUDIO",
         año: 2026,
         galeria: [
             "/assets/projects/reve-contest/portada.jpg",
@@ -442,7 +442,7 @@ export const projects = [
         slug: "ttp-cabitel",
         categoria: "Art Direction",
         imagenPortada: "/assets/projects/ttp-cabitel/portada.jpg",
-        titulo: "TTP Cabitel",
+        titulo: "Si te gusta que te miren...",
         cliente: "TTP Cabitel",
         año: 2003,
         galeria: [
@@ -469,7 +469,7 @@ export const projects = [
         slug: "coliseo-acolsa-packaging",
         categoria: "Art Direction",
         imagenPortada: "/assets/projects/coliseo-acolsa-packaging/portada.jpg",
-        titulo: "Coliseo / Acolsa Packaging",
+        titulo: "Coliseo Packaging",
         cliente: "Acolsa",
         año: 2008,
         galeria: [
@@ -482,7 +482,7 @@ export const projects = [
         slug: "soldevilla-packaging",
         categoria: "Art Direction",
         imagenPortada: "/assets/projects/soldevilla-packaging/portada.jpg",
-        titulo: "Soldevilla Finca Sotillo Bajo Packaging",
+        titulo: "Finca Sotillo Bajo Packaging",
         cliente: "Soldevilla",
         año: 2007,
         galeria: [
@@ -509,7 +509,7 @@ export const projects = [
         slug: "graciano-packaging",
         categoria: "Art Direction",
         imagenPortada: "/assets/projects/graciano-packaging/portada.jpg",
-        titulo: "Graciano Finca Los Alijares Packaging",
+        titulo: "Graciano Packaging",
         cliente: "Finca Los Alijares",
         año: 2007,
         galeria: [
