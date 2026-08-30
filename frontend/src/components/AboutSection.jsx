@@ -10,18 +10,24 @@ const APPROACH = [
 ];
 
 const AGENCIES = [
-    { years: "2026", name: "Dentsu" },
-    { years: "2023/4", name: "VML" },
-    { years: "2021/4", name: "Jellyfish" },
-    { years: "2021/2", name: "VMLY&R Commerce" },
-    { years: "2020/1", name: "Geometry Global" },
-    { years: "2010/4", name: "El Corte Inglés" },
-    { years: "2006/7", name: "Pinnacle DDB" },
-    { years: "2005/6", name: "20 Segundos" },
-    { years: "2004/5", name: "Thinksmart" },
-    { years: "2002/4", name: "Mark Line Ogilvy" },
-    { years: "2001", name: "Izquierdo Beaumont-Bennett" },
+    { start: 1996, years: "1996", name: "The Grandfather + FERRÁN STUDIO" },
+    { start: 2001, years: "2001", name: "Izquierdo Beaumont-Bennett" },
+    { start: 2002, years: "2002/4", name: "Mark Line Ogilvy" },
+    { start: 2004, years: "2004/5", name: "Thinksmart" },
+    { start: 2005, years: "2005/6", name: "20 Segundos" },
+    { start: 2006, years: "2006/7", name: "Pinnacle DDB" },
+    { start: 2010, years: "2010/4", name: "El Corte Inglés" },
+    { start: 2014, years: "2014-2020", name: "Gráfico Taller" },
+    { start: 2020, years: "2020/1", name: "Geometry Global" },
+    { start: 2021, years: "2021/2", name: "VMLY&R Commerce" },
+    { start: 2021, years: "2021/4", name: "Jellyfish" },
+    { start: 2023, years: "2023/4", name: "VML" },
+    { start: 2026, years: "2026", name: "Dentsu" },
 ];
+
+const TIMELINE_MIN_YEAR = 1996;
+const TIMELINE_MAX_YEAR = 2026;
+const TIMELINE_WIDTH = 1600;
 
 export const AboutSection = () => {
     const imgRef = useRef(null);
@@ -143,14 +149,59 @@ export const AboutSection = () => {
                         <h3 className="text-sm font-semibold uppercase tracking-[0.16em]">
                             Agencies I have worked with
                         </h3>
-                        <ul className="mt-4 space-y-1.5 text-sm text-neutral-600 md:text-base">
-                            {AGENCIES.map(({ years, name }) => (
-                                <li key={`${years}-${name}`} className="flex gap-3">
-                                    <span className="w-16 shrink-0 font-semibold text-accent">{years}</span>
-                                    <span>{name}</span>
-                                </li>
-                            ))}
-                        </ul>
+                        <div className="mt-8 overflow-x-auto pb-4">
+                            <div
+                                className="relative"
+                                style={{ minWidth: `${TIMELINE_WIDTH}px`, height: "180px" }}
+                            >
+                                <div
+                                    className="absolute left-0 right-0 top-1/2 h-px bg-accent/30"
+                                    aria-hidden="true"
+                                />
+                                {AGENCIES.map((item, i) => {
+                                    const pct =
+                                        ((item.start - TIMELINE_MIN_YEAR) /
+                                            (TIMELINE_MAX_YEAR - TIMELINE_MIN_YEAR)) *
+                                        100;
+                                    const above = i % 2 === 0;
+                                    return (
+                                        <div
+                                            key={`${item.start}-${item.name}`}
+                                            className="absolute flex w-28 -translate-x-1/2 flex-col items-center"
+                                            style={
+                                                above
+                                                    ? { left: `${pct}%`, bottom: "50%" }
+                                                    : { left: `${pct}%`, top: "50%" }
+                                            }
+                                        >
+                                            {above ? (
+                                                <>
+                                                    <span className="text-xs font-semibold text-accent">
+                                                        {item.years}
+                                                    </span>
+                                                    <span className="mt-1 text-center text-xs leading-snug text-neutral-600">
+                                                        {item.name}
+                                                    </span>
+                                                    <span className="mt-2 h-3 w-px bg-accent/50" />
+                                                    <span className="-mt-1 h-2 w-2 rounded-full bg-accent" />
+                                                </>
+                                            ) : (
+                                                <>
+                                                    <span className="-mb-1 h-2 w-2 rounded-full bg-accent" />
+                                                    <span className="h-3 w-px bg-accent/50" />
+                                                    <span className="mt-2 text-xs font-semibold text-accent">
+                                                        {item.years}
+                                                    </span>
+                                                    <span className="mt-1 text-center text-xs leading-snug text-neutral-600">
+                                                        {item.name}
+                                                    </span>
+                                                </>
+                                            )}
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
                     </motion.div>
                 </div>
             </div>

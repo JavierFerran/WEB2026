@@ -413,6 +413,29 @@ export const projects = [
         descripcion:
             "Explora la última frontera salvaje de Andalucía y el Algarve.\n\nAtlantic Wilderness es una guía digital interactiva que te invita a descubrir 24 localidades costeras únicas a lo largo del Atlántico al Sur de Europa, desde Tarifa (España) hasta Lagos (Portugal). La app combina naturaleza, aventura y tecnología para mostrarte playas vírgenes, rutas por parques naturales, y la fauna y flora que habita en este territorio salvaje: Mapas interactivos con geolocalización en tiempo real. Fotos reales y locales gracias a integración con Wikimedia Commons. Ficha detallada por cada localidad: Playas destacadas, Rutas o parques naturales, Especies de flora y fauna. Integra una IA que te permite analizar fotos de animales y sus huellas, plantas y lugares. También contiene un chat de información y una brújula. Funciona como app progresiva (PWA), sin instalación, disponible offline. Ideal para viajeros conscientes, exploradores de la naturaleza y amantes del Atlántico que buscan reconectar con la naturaleza y la costa más salvaje del Océano Atlántico. Esta App está en desarrollo y puede dar errores en tus conversaciones con IA, está en constante evolución y la estamos afinando hasta que quede perfecta.\n\n¿Cómo instalarla en el móvil? Si entras desde Chrome (Android) o Safari (iPhone), busca en el menú del navegador \"Añadir a la pantalla de inicio\". https://atlantic-wilderness.lovable.app",
     },
+    {
+        id: 69,
+        slug: "reve-generative-ai-contest",
+        categoria: "Art Direction",
+        imagenPortada: "/assets/projects/reve-contest/portada.jpg",
+        titulo: "Reve Generative AI Contest",
+        cliente: "—",
+        año: 2026,
+        galeria: [
+            "/assets/projects/reve-contest/portada.jpg",
+            "/assets/projects/atlantic-wilderness/img2.jpg",
+            "/assets/projects/reve-contest/img3.jpg",
+            "/assets/projects/reve-contest/img4.jpg",
+            "/assets/projects/reve-contest/img5.jpg",
+            "/assets/projects/reve-contest/img6.jpg",
+            "/assets/projects/reve-contest/img7.jpg",
+            "/assets/projects/reve-contest/img8.jpg",
+            "/assets/projects/reve-contest/img9.jpg",
+            "/assets/projects/reve-contest/img10.jpg",
+        ],
+        descripcion:
+            "350 kilómetros de costa salvaje separan Tarifa de Lagos. Siete espacios protegidos. Un solo océano.\n\nPresento 10 imágenes generadas con IA que recorren la Costa Atlántica del Sur de Europa, desde el Estrecho de Gibraltar hasta el Algarve portugués, explorando 10 técnicas visuales distintas. Cada una nace de un prompt diseñado específicamente para el modelo de planificación y renderizado nativo 4K de Reve 2.0.\n\nEstas son las 10 técnicas detrás de cada imagen:\n\nIdentidad de marca. Logo \"Atlantic Wilderness\" grabado en madera de deriva sobre la arena de la Cuesta Maneli, Huelva. Fotografía de producto en entorno natural, luz dorada de media tarde, tipografía propia integrada en el territorio.\n\nRetrato grupal cinematográfico. Una visión imposible en la realidad, la familia completa de la costa atlántica reunida en la orilla al atardecer. Composición clásica, luz rasante, reflejos en arena mojada. Lo que la naturaleza no permite en un solo fotograma, la imaginación sí.\n\nFotografía de producto. Cangrejo de roca como bodegón natural sobre granito. Macro a f/8, profundidad total, tres conchas nativas de Huelva, luz de estudio creada por el sol poniente.\n\nAcción con teleobjetivo. Correlimos tridáctilo corriendo por la orilla de Tarifa. 300mm, contraluz dorado, gotas de agua suspendidas en el aire como joyas, sombras largas sobre la arena.\n\nRetrato de personaje. Flamenco común graznando al ocaso en las Marismas del Odiel. Retrato expresivo, pico abierto, gesto de llamada crudo y desgarrado. El alma de la marisma hecha visible.\n\nGran angular subacuático. Orca en el Estrecho de Gibraltar. Luz crepuscular filtrándose desde la superficie, cardumen de atunes rojos como testigo de la caza ancestral.\n\nCiencia ficción y arte conceptual. Medusa bioluminiscente en las profundidades del Atlántico, frente al Algarve. Paleta de azul eléctrico, cian y violeta. La criatura como faro orgánico en la oscuridad abisal, a 800 metros de profundidad.\n\nTipografía integrada. Lince ibérico sobre el monolito \"LYNX\" en tipografía Trajan, Doñana. Piedra erosionada, musgo, jaras en flor. La tipografía hecha hábitat y su arquitectura convertida en mirador para el felino más raro de Europa.\n\nMacro extremo. Camaleón común atrapando una mantis religiosa con su lengua proyectil en La Breña. Momento congelado a 1/8000s, ojo reptiliano con pupila vertical, escamas en detalle extremo.\n\nArquitectura. Faro abandonado en el Algarve con un águila pescadora en su nido. Espiral de piedra y hierro oxidado, luz entrando por la ventana rota, la naturaleza reclamando lo que los humanos dejaron atrás.\n\nCada imagen es obra propia, generada con Reve 2.0, con cada prompt iterado hasta conseguir la luz, la textura y la emoción que buscaba. No son fotografías. Son invitaciones a mirar la costa atlántica con otros ojos.",
+    },
 ];
 
 export const getCategoryCounts = () => {
