@@ -6,7 +6,7 @@ export const projects = [
         slug: "faro-santander",
         categoria: "Art Direction",
         imagenPortada: "/assets/projects/faro-santander/portada.jpg",
-        titulo: "Faro Santander — Eclipse Solar",
+        titulo: "Faro Santander / Santander Fundación",
         cliente: "Santander Fundación",
         año: 2026,
         galeria: ["/assets/projects/faro-santander/portada.jpg"],
