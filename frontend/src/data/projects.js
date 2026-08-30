@@ -1,4 +1,4 @@
-export const CATEGORIES = ["Art Direction", "Artworks", "Apps", "Web", "Brands"];
+export const CATEGORIES = ["Art Direction", "Artworks", "Apps", "Brands"];
 
 export const projects = [
     {
@@ -435,6 +435,87 @@ export const projects = [
         ],
         descripcion:
             "350 kilómetros de costa salvaje separan Tarifa de Lagos. Siete espacios protegidos. Un solo océano.\n\nPresento 10 imágenes generadas con IA que recorren la Costa Atlántica del Sur de Europa, desde el Estrecho de Gibraltar hasta el Algarve portugués, explorando 10 técnicas visuales distintas. Cada una nace de un prompt diseñado específicamente para el modelo de planificación y renderizado nativo 4K de Reve 2.0.\n\nEstas son las 10 técnicas detrás de cada imagen:\n\nIdentidad de marca. Logo \"Atlantic Wilderness\" grabado en madera de deriva sobre la arena de la Cuesta Maneli, Huelva. Fotografía de producto en entorno natural, luz dorada de media tarde, tipografía propia integrada en el territorio.\n\nRetrato grupal cinematográfico. Una visión imposible en la realidad, la familia completa de la costa atlántica reunida en la orilla al atardecer. Composición clásica, luz rasante, reflejos en arena mojada. Lo que la naturaleza no permite en un solo fotograma, la imaginación sí.\n\nFotografía de producto. Cangrejo de roca como bodegón natural sobre granito. Macro a f/8, profundidad total, tres conchas nativas de Huelva, luz de estudio creada por el sol poniente.\n\nAcción con teleobjetivo. Correlimos tridáctilo corriendo por la orilla de Tarifa. 300mm, contraluz dorado, gotas de agua suspendidas en el aire como joyas, sombras largas sobre la arena.\n\nRetrato de personaje. Flamenco común graznando al ocaso en las Marismas del Odiel. Retrato expresivo, pico abierto, gesto de llamada crudo y desgarrado. El alma de la marisma hecha visible.\n\nGran angular subacuático. Orca en el Estrecho de Gibraltar. Luz crepuscular filtrándose desde la superficie, cardumen de atunes rojos como testigo de la caza ancestral.\n\nCiencia ficción y arte conceptual. Medusa bioluminiscente en las profundidades del Atlántico, frente al Algarve. Paleta de azul eléctrico, cian y violeta. La criatura como faro orgánico en la oscuridad abisal, a 800 metros de profundidad.\n\nTipografía integrada. Lince ibérico sobre el monolito \"LYNX\" en tipografía Trajan, Doñana. Piedra erosionada, musgo, jaras en flor. La tipografía hecha hábitat y su arquitectura convertida en mirador para el felino más raro de Europa.\n\nMacro extremo. Camaleón común atrapando una mantis religiosa con su lengua proyectil en La Breña. Momento congelado a 1/8000s, ojo reptiliano con pupila vertical, escamas en detalle extremo.\n\nArquitectura. Faro abandonado en el Algarve con un águila pescadora en su nido. Espiral de piedra y hierro oxidado, luz entrando por la ventana rota, la naturaleza reclamando lo que los humanos dejaron atrás.\n\nCada imagen es obra propia, generada con Reve 2.0, con cada prompt iterado hasta conseguir la luz, la textura y la emoción que buscaba. No son fotografías. Son invitaciones a mirar la costa atlántica con otros ojos.",
+    },
+    {
+        id: 70,
+        slug: "ttp-cabitel",
+        categoria: "Art Direction",
+        imagenPortada: "/assets/projects/ttp-cabitel/portada.jpg",
+        titulo: "TTP Cabitel",
+        cliente: "TTP Cabitel",
+        año: 2003,
+        galeria: [
+            "/assets/projects/ttp-cabitel/portada.jpg",
+            "/assets/projects/ttp-cabitel/img2.jpg",
+        ],
+        descripcion: "",
+    },
+    {
+        id: 71,
+        slug: "biocano-packaging",
+        categoria: "Art Direction",
+        imagenPortada: "/assets/projects/biocano-packaging/portada.jpg",
+        titulo: "Biocano Packaging",
+        cliente: "Biocano",
+        año: 2005,
+        galeria: [
+            "/assets/projects/biocano-packaging/portada.jpg",
+        ],
+        descripcion: "",
+    },
+    {
+        id: 72,
+        slug: "coliseo-acolsa-packaging",
+        categoria: "Art Direction",
+        imagenPortada: "/assets/projects/coliseo-acolsa-packaging/portada.jpg",
+        titulo: "Coliseo / Acolsa Packaging",
+        cliente: "Acolsa",
+        año: 2008,
+        galeria: [
+            "/assets/projects/coliseo-acolsa-packaging/portada.jpg",
+        ],
+        descripcion: "",
+    },
+    {
+        id: 73,
+        slug: "soldevilla-packaging",
+        categoria: "Art Direction",
+        imagenPortada: "/assets/projects/soldevilla-packaging/portada.jpg",
+        titulo: "Soldevilla Finca Sotillo Bajo Packaging",
+        cliente: "Soldevilla",
+        año: 2007,
+        galeria: [
+            "/assets/projects/soldevilla-packaging/portada.jpg",
+        ],
+        descripcion: "",
+    },
+    {
+        id: 74,
+        slug: "caprice-packaging",
+        categoria: "Art Direction",
+        imagenPortada: "/assets/projects/caprice-packaging/portada.jpg",
+        titulo: "Caprice Packaging",
+        cliente: "Caprice",
+        año: 2006,
+        galeria: [
+            "/assets/projects/caprice-packaging/portada.jpg",
+            "/assets/projects/caprice-packaging/img2.jpg",
+        ],
+        descripcion: "",
+    },
+    {
+        id: 75,
+        slug: "graciano-packaging",
+        categoria: "Art Direction",
+        imagenPortada: "/assets/projects/graciano-packaging/portada.jpg",
+        titulo: "Graciano Finca Los Alijares Packaging",
+        cliente: "Finca Los Alijares",
+        año: 2007,
+        galeria: [
+            "/assets/projects/graciano-packaging/portada.jpg",
+            "/assets/projects/graciano-packaging/img2.jpg",
+        ],
+        descripcion: "",
     },
 ];
 
