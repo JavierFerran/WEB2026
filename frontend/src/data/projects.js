@@ -92,6 +92,7 @@ export const projects = [
     { id: 56, slug: "ayuda-digital-covid", categoria: "Brands", imagenPortada: "/assets/brands/ayudacovid.png", titulo: "Ayuda Digital COVID", cliente: "—", año: 2026, galeria: ["/assets/brands/ayudacovid.png"], descripcion: "", esLogo: true },
     { id: 57, slug: "hacking-covid", categoria: "Brands", imagenPortada: "/assets/brands/hackingcovid.png", titulo: "Hacking COVID", cliente: "—", año: 2026, galeria: ["/assets/brands/hackingcovid.png"], descripcion: "", esLogo: true },
     { id: 58, slug: "conquer-your-space", categoria: "Brands", imagenPortada: "/assets/brands/conquerspace.png", titulo: "Conquer Your Space", cliente: "—", año: 2026, galeria: ["/assets/brands/conquerspace.png"], descripcion: "", esLogo: true },
+    { id: 76, slug: "atlantic-wilderness-logo", categoria: "Brands", imagenPortada: "/assets/brands/atlanticwilderness.png", titulo: "Atlantic Wilderness", cliente: "—", año: 2026, galeria: ["/assets/brands/atlanticwilderness.png"], descripcion: "", esLogo: true },
     {
         id: 47,
         slug: "ndl-pro-health",
