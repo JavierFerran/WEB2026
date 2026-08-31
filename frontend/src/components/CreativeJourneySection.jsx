@@ -73,6 +73,7 @@ export const CreativeJourneySection = () => (
         data-testid="creative-journey-section"
         className="mx-auto max-w-[1920px] scroll-mt-24 px-4 pt-20 md:px-10 md:pt-28"
     >
+        <div className="mx-auto max-w-4xl">
         <motion.h2
             initial={{ opacity: 0, y: 26 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -83,13 +84,13 @@ export const CreativeJourneySection = () => (
             Creative Journey
         </motion.h2>
 
-        <div className="mt-8 grid gap-16 md:grid-cols-[1.4fr_1fr] md:gap-12">
+        <div className="mt-6 grid gap-10 md:grid-cols-[1.4fr_1fr] md:gap-10">
             <motion.ol
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, ease: EASE }}
-                className="relative space-y-6 border-l border-accent/30 pl-6"
+                className="relative space-y-3 border-l border-accent/30 pl-6"
             >
                 {JOURNEY.map((item) => (
                     <li key={`${item.years}-${item.name}`} className="relative">
@@ -117,13 +118,13 @@ export const CreativeJourneySection = () => (
                 <h3 className="text-sm font-semibold uppercase tracking-[0.16em]">
                     Selected Awards
                 </h3>
-                <div className="mt-6 space-y-8">
+                <div className="mt-4 space-y-5">
                     {AWARDS.map((group) => (
                         <div key={group.org}>
                             <p className="text-sm font-semibold text-[color:var(--color-ink)]">
                                 {group.org}
                             </p>
-                            <ul className="mt-3 space-y-4 border-l border-neutral-200 pl-4">
+                            <ul className="mt-2 space-y-2 border-l border-neutral-200 pl-4">
                                 {group.items.map((item, i) => (
                                     <li key={i} className="text-sm">
                                         {item.url ? (
@@ -148,6 +149,7 @@ export const CreativeJourneySection = () => (
                     ))}
                 </div>
             </motion.div>
+        </div>
         </div>
     </section>
 );
