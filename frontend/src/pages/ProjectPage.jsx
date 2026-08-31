@@ -87,48 +87,56 @@ export default function ProjectPage() {
                     {project.categoria} · {project.cliente} · {project.año}
                 </motion.p>
 
-                <div data-testid="project-gallery" className="mt-10 space-y-6 md:space-y-10">
+                <div data-testid="project-gallery" className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
                     {project.galeria.map((item, i) => {
                         const isVideo = /\.mp4$/i.test(item);
-                        const style = project.anchoNativo?.[i]
-                            ? { maxWidth: `${project.anchoNativo[i]}px`, width: "100%", margin: "0 auto" }
+                        const mediaStyle = project.anchoNativo?.[i]
+                            ? { maxWidth: `${project.anchoNativo[i]}px` }
                             : undefined;
 
                         if (isVideo) {
                             return (
-                                <motion.video
+                                <motion.div
                                     key={i}
-                                    src={item}
-                                    poster={project.videoPoster}
-                                    autoPlay
-                                    muted
-                                    loop
-                                    playsInline
-                                    controls
-                                    preload="auto"
                                     initial={{ opacity: 0, y: 40 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true, margin: "-60px" }}
                                     transition={{ duration: 0.8, ease: EASE }}
-                                    style={style}
-                                    className="block h-auto w-full"
-                                />
+                                    className="flex items-center justify-center"
+                                >
+                                    <video
+                                        src={item}
+                                        poster={project.videoPoster}
+                                        autoPlay
+                                        muted
+                                        loop
+                                        playsInline
+                                        controls
+                                        preload="auto"
+                                        style={mediaStyle}
+                                        className="max-h-[70vh] w-auto max-w-full object-contain"
+                                    />
+                                </motion.div>
                             );
                         }
 
                         return (
-                            <motion.img
+                            <motion.div
                                 key={i}
-                                src={item}
-                                alt={`${project.titulo} — imagen ${i + 1}`}
-                                loading={i === 0 ? "eager" : "lazy"}
                                 initial={{ opacity: 0, y: 40 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-60px" }}
                                 transition={{ duration: 0.8, ease: EASE }}
-                                style={style}
-                                className="block h-auto w-full"
-                            />
+                                className="flex items-center justify-center"
+                            >
+                                <img
+                                    src={item}
+                                    alt={`${project.titulo} — imagen ${i + 1}`}
+                                    loading={i === 0 ? "eager" : "lazy"}
+                                    style={mediaStyle}
+                                    className="max-h-[70vh] w-auto max-w-full object-contain"
+                                />
+                            </motion.div>
                         );
                     })}
                 </div>
