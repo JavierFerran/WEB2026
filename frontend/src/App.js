@@ -5,6 +5,8 @@ import Lenis from "lenis";
 import { setLenis } from "@/lib/scroll";
 import HomePage from "@/pages/HomePage";
 import ProjectPage from "@/pages/ProjectPage";
+import LegalPage from "@/pages/LegalPage";
+import PrivacyPage from "@/pages/PrivacyPage";
 
 function App() {
     useEffect(() => {
@@ -29,6 +31,8 @@ function App() {
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/work/:slug" element={<ProjectPage />} />
+                    <Route path="/aviso-legal" element={<LegalPage />} />
+                    <Route path="/privacidad" element={<PrivacyPage />} />
                     <Route path="*" element={<Navigate to="/" replace />} />
                 </Routes>
             </BrowserRouter>
