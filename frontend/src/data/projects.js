@@ -181,6 +181,7 @@ export const projects = [
             "/assets/projects/ambito-cultural/dia-libro-2012.jpg",
             "/assets/projects/ambito-cultural/voz-de-galicia-130.jpg",
         ],
+        anchoNativo: [841, 842, 427, 841, 677, 595, 595, 843, 842],
         descripcion: "",
     },
     {
@@ -211,6 +212,7 @@ export const projects = [
             "/assets/projects/el-corte-ingles/17.jpg",
             "/assets/projects/el-corte-ingles/18.jpg",
         ],
+        anchoNativo: [842, 595, 880, 595, 880, 595, 880, 841, 842, 841, 833, 843, 843, 567, 842, 831, 804, 842],
         descripcion: "",
     },
     {
@@ -243,6 +245,7 @@ export const projects = [
             "/assets/projects/forus-trinidad/portada.jpg",
             "/assets/projects/forus-trinidad/img2.jpg",
         ],
+        anchoNativo: [816, 816],
         descripcion: "",
     },
     {
@@ -269,6 +272,7 @@ export const projects = [
         galeria: [
             "/assets/projects/harley-davidson-100/portada.jpg",
         ],
+        anchoNativo: [1000],
         descripcion: "",
     },
     {
@@ -297,6 +301,7 @@ export const projects = [
             "/assets/projects/reciclaje-diputacion-granada/img2.jpg",
             "/assets/projects/reciclaje-diputacion-granada/img3.jpg",
         ],
+        anchoNativo: [842, 842, 842],
         descripcion: "",
     },
     {
@@ -312,6 +317,7 @@ export const projects = [
             "/assets/projects/el-submarino/img2.jpg",
             "/assets/projects/el-submarino/img3.jpg",
         ],
+        anchoNativo: [842, 842, 842],
         descripcion: "",
     },
     {
@@ -398,6 +404,7 @@ export const projects = [
             "/assets/projects/atlantic-wilderness/img7.jpg",
             "/assets/projects/atlantic-wilderness/img8.jpg",
         ],
+        anchoNativo: [undefined, 1024, 1024, undefined, 1024, undefined, 800],
         descripcion: "",
     },
     {
@@ -462,6 +469,7 @@ export const projects = [
         galeria: [
             "/assets/projects/biocano-packaging/portada.jpg",
         ],
+        anchoNativo: [399],
         descripcion: "",
     },
     {
