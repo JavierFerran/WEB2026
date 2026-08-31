@@ -50,7 +50,8 @@ export default function ProjectPage() {
     return (
         <div data-testid="project-page">
             <Header />
-            <main className="mx-auto max-w-[1200px] px-6 pt-10 md:px-14 md:pt-14">
+            <main className="mx-auto max-w-[1920px] px-4 pt-10 md:px-10 md:pt-14">
+                <div className="mx-auto max-w-[1200px]">
                 <motion.div
                     initial={{ opacity: 0, y: 16 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -86,8 +87,12 @@ export default function ProjectPage() {
                 >
                     {project.categoria} · {project.cliente} · {project.año}
                 </motion.p>
+                </div>
 
-                <div data-testid="project-gallery" className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                <div
+                    data-testid="project-gallery"
+                    className="mt-10 grid grid-cols-1 items-start justify-items-center gap-5 sm:grid-cols-2 lg:grid-cols-3"
+                >
                     {project.galeria.map((item, i) => {
                         const isVideo = /\.mp4$/i.test(item);
                         const mediaStyle = project.anchoNativo?.[i]
@@ -96,51 +101,44 @@ export default function ProjectPage() {
 
                         if (isVideo) {
                             return (
-                                <motion.div
+                                <motion.video
                                     key={i}
+                                    src={item}
+                                    poster={project.videoPoster}
+                                    autoPlay
+                                    muted
+                                    loop
+                                    playsInline
+                                    controls
+                                    preload="auto"
                                     initial={{ opacity: 0, y: 40 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true, margin: "-60px" }}
                                     transition={{ duration: 0.8, ease: EASE }}
-                                    className="flex items-center justify-center"
-                                >
-                                    <video
-                                        src={item}
-                                        poster={project.videoPoster}
-                                        autoPlay
-                                        muted
-                                        loop
-                                        playsInline
-                                        controls
-                                        preload="auto"
-                                        style={mediaStyle}
-                                        className="max-h-[70vh] w-auto max-w-full object-contain"
-                                    />
-                                </motion.div>
+                                    style={mediaStyle}
+                                    className="max-h-[70vh] w-auto max-w-full object-contain"
+                                />
                             );
                         }
 
                         return (
-                            <motion.div
+                            <motion.img
                                 key={i}
+                                src={item}
+                                alt={`${project.titulo} — imagen ${i + 1}`}
+                                loading={i === 0 ? "eager" : "lazy"}
                                 initial={{ opacity: 0, y: 40 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-60px" }}
                                 transition={{ duration: 0.8, ease: EASE }}
-                                className="flex items-center justify-center"
-                            >
-                                <img
-                                    src={item}
-                                    alt={`${project.titulo} — imagen ${i + 1}`}
-                                    loading={i === 0 ? "eager" : "lazy"}
-                                    style={mediaStyle}
-                                    className="max-h-[70vh] w-auto max-w-full object-contain"
-                                />
-                            </motion.div>
+                                style={mediaStyle}
+                                className="max-h-[70vh] w-auto max-w-full object-contain"
+                            />
                         );
                     })}
                 </div>
 
+                <div className="mx-auto max-w-[1200px]">
                 <motion.div
                     data-testid="project-description"
                     initial={{ opacity: 0, y: 24 }}
@@ -169,6 +167,7 @@ export default function ProjectPage() {
                         <ArrowLeft className="h-4 w-4" strokeWidth={1.5} />
                         Back to Work
                     </Link>
+                </div>
                 </div>
             </main>
             <Footer />
