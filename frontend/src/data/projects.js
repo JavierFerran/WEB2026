@@ -63,7 +63,7 @@ export const projects = [
     { id: 32, slug: "la-firma-auditores", categoria: "Brands", imagenPortada: "/assets/brands/lafirma.png", titulo: "La Firma Auditores", cliente: "—", año: 2026, galeria: ["/assets/brands/lafirma.png"], descripcion: "", esLogo: true },
     { id: 33, slug: "hotel-laboutique", categoria: "Brands", imagenPortada: "/assets/brands/hotellb.png", titulo: "Hotel Laboutique", cliente: "—", año: 2026, galeria: ["/assets/brands/hotellb.png"], descripcion: "", esLogo: true },
     { id: 34, slug: "hotel-cordoba-centro", categoria: "Brands", imagenPortada: "/assets/brands/hotelcc.png", titulo: "Hotel Córdoba Centro", cliente: "—", año: 2026, galeria: ["/assets/brands/hotelcc.png"], descripcion: "", esLogo: true },
-    { id: 35, slug: "el-submarino", categoria: "Brands", imagenPortada: "/assets/brands/elsubmarino.png", titulo: "El Submarino", cliente: "—", año: 2026, galeria: ["/assets/brands/elsubmarino.png"], descripcion: "", esLogo: true },
+    { id: 35, slug: "el-submarino-logo", categoria: "Brands", imagenPortada: "/assets/brands/elsubmarino.png", titulo: "El Submarino", cliente: "—", año: 2026, galeria: ["/assets/brands/elsubmarino.png"], descripcion: "", esLogo: true },
     { id: 36, slug: "el-bicho-flamencofusion", categoria: "Brands", imagenPortada: "/assets/brands/elbicho.png", titulo: "El Bicho Flamencofusion", cliente: "—", año: 2026, galeria: ["/assets/brands/elbicho.png"], descripcion: "", esLogo: true },
     { id: 37, slug: "ebraincar", categoria: "Brands", imagenPortada: "/assets/brands/ebraincar.png", titulo: "ebrainCAR", cliente: "—", año: 2026, galeria: ["/assets/brands/ebraincar.png"], descripcion: "", esLogo: true },
     { id: 38, slug: "contractone", categoria: "Brands", imagenPortada: "/assets/brands/contractone.png", titulo: "ContractOne", cliente: "—", año: 2026, galeria: ["/assets/brands/contractone.png"], descripcion: "", esLogo: true },
@@ -316,8 +316,10 @@ export const projects = [
             "/assets/projects/el-submarino/portada.jpg",
             "/assets/projects/el-submarino/img2.jpg",
             "/assets/projects/el-submarino/img3.jpg",
+            "/assets/projects/el-submarino/img4.jpg",
+            "/assets/projects/el-submarino/img5.jpg",
         ],
-        anchoNativo: [842, 842, 842],
+        anchoNativo: [842, 842, 842, 842, 842],
         descripcion: "",
     },
     {
@@ -482,6 +484,7 @@ export const projects = [
         año: 2008,
         galeria: [
             "/assets/projects/coliseo-acolsa-packaging/portada.jpg",
+            "/assets/projects/coliseo-acolsa-packaging/web.jpg",
         ],
         descripcion: "",
     },
@@ -495,6 +498,7 @@ export const projects = [
         año: 2007,
         galeria: [
             "/assets/projects/soldevilla-packaging/portada.jpg",
+            "/assets/projects/soldevilla-packaging/web.jpg",
         ],
         descripcion: "",
     },
@@ -509,6 +513,7 @@ export const projects = [
         galeria: [
             "/assets/projects/caprice-packaging/portada.jpg",
             "/assets/projects/caprice-packaging/img2.jpg",
+            "/assets/projects/caprice-packaging/web.jpg",
         ],
         descripcion: "",
     },
