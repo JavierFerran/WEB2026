@@ -96,7 +96,7 @@ export default function ProjectPage() {
                     {project.galeria.map((item, i) => {
                         const isVideo = /\.mp4$/i.test(item);
                         const mediaStyle = project.anchoNativo?.[i]
-                            ? { maxWidth: `${project.anchoNativo[i]}px` }
+                            ? { maxWidth: `min(${project.anchoNativo[i]}px, 100%)` }
                             : undefined;
 
                         if (isVideo) {
