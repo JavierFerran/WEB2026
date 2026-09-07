@@ -96,6 +96,21 @@ export const projects = [
         descripcion: "",
     },
     {
+        id: 77,
+        slug: "toty-cantabria-labs",
+        categoria: "Art Direction",
+        imagenPortada: "/assets/projects/toty-cantabria-labs/portada.jpg",
+        titulo: "Toty by Cantabria Labs",
+        cliente: "Cantabria Labs",
+        año: 2025,
+        galeria: [
+            "/assets/projects/toty-cantabria-labs/portada.jpg",
+            "/assets/projects/toty-cantabria-labs/gallery-01.jpg",
+            "/assets/projects/toty-cantabria-labs/gallery-02.jpg",
+        ],
+        descripcion: "",
+    },
+    {
         id: 48,
         slug: "knauf-packaging-gama-pro",
         categoria: "Art Direction",
