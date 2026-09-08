@@ -431,7 +431,7 @@ export const projects = [
         cliente: "FERRÁN STUDIO",
         año: 2025,
         galeria: [
-            "/assets/projects/atlantic-wilderness/guardians-of-a-legacy.mp4",
+            "https://vimeo.com/1224911254",
             "/assets/projects/atlantic-wilderness/last-message.mp4",
             "/assets/projects/atlantic-wilderness/img2.jpg",
             "/assets/projects/atlantic-wilderness/img3.jpg",

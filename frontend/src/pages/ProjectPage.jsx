@@ -95,9 +95,33 @@ export default function ProjectPage() {
                 >
                     {project.galeria.map((item, i) => {
                         const isVideo = /\.mp4$/i.test(item);
+                        const isVimeo = /vimeo\.com/i.test(item);
                         const mediaStyle = project.anchoNativo?.[i]
                             ? { maxWidth: `min(${project.anchoNativo[i]}px, 100%)` }
                             : undefined;
+
+                        if (isVimeo) {
+                            const vimeoId = item.match(/vimeo\.com\/(\d+)/)?.[1];
+                            return (
+                                <motion.div
+                                    key={i}
+                                    initial={{ opacity: 0, y: 40 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true, margin: "-60px" }}
+                                    transition={{ duration: 0.8, ease: EASE }}
+                                    style={mediaStyle}
+                                    className="aspect-video w-full max-w-full sm:col-span-2 lg:col-span-3"
+                                >
+                                    <iframe
+                                        src={`https://player.vimeo.com/video/${vimeoId}`}
+                                        allow="autoplay; fullscreen; picture-in-picture"
+                                        allowFullScreen
+                                        title={`${project.titulo} — vídeo`}
+                                        className="h-full w-full"
+                                    />
+                                </motion.div>
+                            );
+                        }
 
                         if (isVideo) {
                             return (
