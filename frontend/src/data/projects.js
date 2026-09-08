@@ -86,6 +86,7 @@ export const projects = [
         año: 2026,
         galeria: [
             "/assets/projects/ndl-pro-health/portada.jpg",
+            "/assets/projects/ndl-pro-health/rafa-nadal.jpg",
             "/assets/projects/ndl-pro-health/omega3.jpg",
             "/assets/projects/ndl-pro-health/omega3-02.jpg",
             "/assets/projects/ndl-pro-health/articulations.jpg",
