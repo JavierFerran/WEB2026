@@ -110,7 +110,7 @@ export default function ProjectPage() {
                                     viewport={{ once: true, margin: "-60px" }}
                                     transition={{ duration: 0.8, ease: EASE }}
                                     style={mediaStyle}
-                                    className="aspect-video w-full max-w-full sm:col-span-2 lg:col-span-3"
+                                    className="aspect-video w-[30%] min-w-[280px] max-w-full sm:col-span-2 lg:col-span-3 mx-auto"
                                 >
                                     <iframe
                                         src={`https://player.vimeo.com/video/${vimeoId}`}
