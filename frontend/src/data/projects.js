@@ -427,7 +427,7 @@ export const projects = [
         categoria: "Art Direction",
         imagenPortada: "/assets/projects/atlantic-wilderness/img2.jpg",
         videoPoster: "/assets/projects/atlantic-wilderness/img2.jpg",
-        titulo: "Atlantic Wilderness",
+        titulo: "Reconnect with the Wild",
         cliente: "FERRÁN STUDIO",
         año: 2025,
         galeria: [
